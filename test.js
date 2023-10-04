@@ -60,22 +60,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-nextButton1.addEventListener("click", function () {
-    if (document.getElementById("badQuality").checked) {
-        document.getElementById("quality").classList.remove("hidden");
-        document.getElementById("quality").classList.add("visible");
-        document.getElementById("version").classList.remove("visible");
-        document.getElementById("version").classList.add("hidden");
-    } else if (document.getElementById("stayHidden").checked) {
-        document.getElementById("finalSubmit").classList.remove("hidden");
-        document.getElementById("nextButton1").classList.add("hidden");
-    } else {
-        document.getElementById("quality").classList.remove("visible");
-        document.getElementById("quality").classList.add("hidden");
-        document.getElementById("version").classList.remove("hidden");
-        document.getElementById("version").classList.add("visible");
-    }
-});
+
+    nextButton1.addEventListener("click", function () {
+        const badQualityChecked = document.getElementById("badQuality").checked;
+        const stayHiddenChecked = document.getElementById("stayHidden").checked;
+        const default1 = document.getElementById("default1").checked;
+        const default2 = document.getElementById("default2").checked;
+        const default3 = document.getElementById("default3").checked;
+
+        // Check if "stayHidden" is selected along with other checkboxes
+        if (stayHiddenChecked && (badQualityChecked || default1 || default2 || default3)) {
+            // If "stayHidden" is selected along with other checkboxes, open the next question
+            document.getElementById("version").classList.remove("hidden");
+            document.getElementById("version").classList.add("visible");
+            document.getElementById("quality").classList.remove("visible");
+            document.getElementById("quality").classList.add("hidden");
+        } else if (badQualityChecked) {
+            // If only "badQuality" is checked, open the quality question
+            document.getElementById("quality").classList.remove("hidden");
+            document.getElementById("quality").classList.add("visible");
+            document.getElementById("version").classList.remove("visible");
+            document.getElementById("version").classList.add("hidden");
+        } else if (stayHiddenChecked) {
+            document.getElementById("finalSubmit").classList.remove("hidden");
+            document.getElementById("nextButton1").classList.add("hidden");
+        } else {
+            // If "stayHidden" is not selected or none of the checkboxes are selected, open the version question
+            document.getElementById("quality").classList.remove("visible");
+            document.getElementById("quality").classList.add("hidden");
+            document.getElementById("version").classList.remove("hidden");
+            document.getElementById("version").classList.add("visible");
+        }
+    });
+
 
 
 
