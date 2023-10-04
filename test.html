@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="styles-2.css">
+</head>
+<body>
+    <form id="surveyForm" class="slider-container">
+        <div class="slider-content">
+            <div class="question">
+                <h3>Please tell us why you want to unsubscribe. Select one or more reasons below:</h3>
+                <label><input type="checkbox" class="q1Option" id="default1"> I just wanted to give it a try</label>
+                <label><input type="checkbox" class="q1Option" id="badQuality"> I am not satisfied with the service quality</label>
+                <label><input type="checkbox" class="q1Option" id="default2"> My favourite game is not on Boosteroid</label>
+                <label><input type="checkbox" class="q1Option" id="default3"> I have finished all the games I wanted to play</label>
+                <label><input type="checkbox" class="q1Option" id="stayHidden"> I don’t want subscription payment to be charged automatically</label>
+    
+                <button type="button" id="nextButton1" class="hidden">Next</button>
+            </div>
+            <div class="question hidden" id="quality">
+                <h3>What kind of issues have you experienced? Select one or more options below:</h3>
+                <label><input type="checkbox" class="q2Option" > Problems with mouse / keyboard / controller</label>
+                <label><input type="checkbox" class="q2Option" > Problems with sound / microphone</label>
+                <label><input type="checkbox" class="q2Option" > Problems with game saves</label>
+                <label><input type="checkbox" class="q2Option" > High ping / latency</label>
+                <label><input type="checkbox" class="q2Option" > Stream quality / low FPS / frame drops</label>
+                <label><input type="checkbox" class="q2Option" > In-game bugs</label>
+                <label><input type="checkbox" class="q2Option" id="techProblemFreeInput"> Other</label>
+    
+                <button type="button" id="nextButton2" class="hidden">Next</button>
+            </div>
+            <div class="question" id="version">
+                <h3>Which Boosteroid version did you use the most often? Select one or more options below:</h3>
+                <label><input type="checkbox" class="q3Option"> Browser (Windows)</label>
+                <label><input type="checkbox" class="q3Option"> Browser (macOS)</label>
+                <label><input type="checkbox" class="q3Option"> Browser (Linux)</label>
+                <label><input type="checkbox" class="q3Option"> Browser (Android phone / tablet)</label>
+                <label><input type="checkbox" class="q3Option"> Browser (iPhone / iPad)</label>
+                <label><input type="checkbox" class="q3Option"> Desktop app (Windows)</label>
+                <label><input type="checkbox" class="q3Option"> Desktop app (macOS)</label>
+                <label><input type="checkbox" class="q3Option"> Desktop app (Linux)</label>
+                <label><input type="checkbox" class="q3Option"> Mobile app (Android)</label>
+                <label><input type="checkbox" class="q3Option"> Android TV app / webOS app</label>
+                <label><input type="checkbox" class="q3Option"> Chromebook app</label>
+    
+                <button type="button" id="nextButton3" class="hidden">Next</button>
+            </div>
+            <div class="question" id="connection">
+                <h3>What is your internet connection type? Select one or more options below:</h3>
+                <label><input type="checkbox" class="q4Option"> Cable / Ethernet</label>
+                <label><input type="checkbox" class="q4Option"> Wi-Fi</label>
+                <label><input type="checkbox" class="q4Option"> Mobile internet</label>
+    
+                <button type="button" id="nextButton4" class="hidden">Next</button>
+            </div>
+            <div class="question" id="suggestions">
+                <h3>What changes / improvements would you like to see on Boosteroid? Leave your suggestions below:</h3>
+                <input type="text" id="suggestions" placeholder="Write here">
+            </div>
+        </div>
+    </form>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+
+    <script src="test.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
