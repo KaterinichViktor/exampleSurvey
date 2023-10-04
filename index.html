@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purpurovi</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <img src="./images/left.png" alt="left">
+        <div class="text-wrap">
+            <h1 class="main-text">Purpurovi <br> Sobaky</h1>
+        </div>
+        <img src="./images/right.png" alt="right">
+    </div>
+    
+    <div class="logo">
+        <h1 class="logo-text" style="scale: 1.1;">P S</h1>
+    </div> -->
+
+    <!-- <div class="design-logo">
+        <h1 class="boosteroid">BOOSTEROID</h1>
+        <div class="slash"></div>
+        <h2 class="blog-1">BLOG</h2>
+    </div>
+    <div class="design-logo">
+        <h1 class="boosteroid">BOOSTEROID</h1>
+        <div class="slash"></div>
+        <h2 class="blog-2">BLOG</h2>
+    </div>
+    <div class="design-logo">
+        <h1 class="boosteroid">BOOSTEROID</h1>
+        <div class="slash"></div>
+        <h2 class="blog-3">BLOG</h2>
+    </div>
+    <div class="design-logo">
+        <h1 class="boosteroid">BOOSTEROID</h1>
+        <div class="slash"></div>
+        <h2 class="blog-4">BLOG</h2>
+    </div>
+    <div class="design-logo">
+        <h1 class="boosteroid">BOOSTEROID</h1>
+        <div class="slash"></div>
+        <h2 class="blog-5">BLOG</h2>
+    </div> -->
+
+
+
+
+    <form id="surveyForm">
+        <div class="question visible">
+            <h3>Please tell us why you want to unsubscribe. Select one or more reasons below:</h3>
+            <label><input type="checkbox" class="q1Option" > I just wanted to give it a try</label>
+            <label><input type="checkbox" class="q1Option" id="badQuality"> I am not satisfied with the service quality</label>
+            <label><input type="checkbox" class="q1Option" > My favourite game is not on Boosteroid</label>
+            <label><input type="checkbox" class="q1Option" > I have finished all the games I wanted to play</label>
+            <label><input type="checkbox" class="q1Option" id="stayHidden"> I don’t want subscription payment to be charged automatically</label>
+
+            <button type="button" id="nextButton1" class="hidden">Next</button>
+        </div>
+        
+        
+        <div class="question hidden" id="quality">
+            <h3>What kind of issues have you experienced? Select one or more options below:</h3>
+            <label><input type="checkbox" class="q2Option" > Problems with mouse / keyboard / controller</label>
+            <label><input type="checkbox" class="q2Option" > Problems with sound / microphone</label>
+            <label><input type="checkbox" class="q2Option" > Problems with game saves</label>
+            <label><input type="checkbox" class="q2Option" > High ping / latency</label>
+            <label><input type="checkbox" class="q2Option" > Stream quality / low FPS / frame drops</label>
+            <label><input type="checkbox" class="q2Option" > In-game bugs</label>
+            <label><input type="checkbox" class="q2Option" id="techProblemFreeInput"> Other</label>
+
+            <button type="button" id="nextButton2" class="hidden">Next</button>
+        </div>
+        
+        
+        <div class="question hidden" id="version">
+            <h3>Which Boosteroid version did you use the most often? Select one or more options below:</h3>
+            <label><input type="checkbox" class="q3Option"> Browser (Windows)</label>
+            <label><input type="checkbox" class="q3Option"> Browser (macOS)</label>
+            <label><input type="checkbox" class="q3Option"> Browser (Linux)</label>
+            <label><input type="checkbox" class="q3Option"> Browser (Android phone / tablet)</label>
+            <label><input type="checkbox" class="q3Option"> Browser (iPhone / iPad)</label>
+            <label><input type="checkbox" class="q3Option"> Desktop app (Windows)</label>
+            <label><input type="checkbox" class="q3Option"> Desktop app (macOS)</label>
+            <label><input type="checkbox" class="q3Option"> Desktop app (Linux)</label>
+            <label><input type="checkbox" class="q3Option"> Mobile app (Android)</label>
+            <label><input type="checkbox" class="q3Option"> Android TV app / webOS app</label>
+            <label><input type="checkbox" class="q3Option"> Chromebook app</label>
+
+            <button type="button" id="nextButton3" class="hidden">Next</button>
+        </div>
+        
+        
+        <div class="question hidden" id="connection">
+            <h3>What is your internet connection type? Select one or more options below:</h3>
+            <label><input type="checkbox" class="q4Option"> Cable / Ethernet</label>
+            <label><input type="checkbox" class="q4Option"> Wi-Fi</label>
+            <label><input type="checkbox" class="q4Option"> Mobile internet</label>
+
+            <button type="button" id="nextButton4" class="hidden">Next</button>
+        </div>
+
+        <div class="question hidden" id="suggestions">
+            <h3>What changes / improvements would you like to see on Boosteroid? Leave your suggestions below:</h3>
+            <input type="text" id="suggestions" placeholder="Write here">
+        </div>
+
+        <button type="submit" id="finalSubmit" class="hidden">submit</button>
+    </form>
+
+    <script src="test.js"></script>
+
+</body>
+</html>

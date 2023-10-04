@@ -1,0 +1,137 @@
+.wrapper{
+width: 920px;
+display: flex;
+background-color: rgb(75, 35, 113);
+justify-content: space-between;
+}
+.text-wrap{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-text{
+    margin: 0;
+    font-size: 70px;
+    text-align: center;
+    /* color: rgb(185, 119, 247); */
+    color: rgb(251, 242, 255);
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+
+    font-family: 'Barriecito', cursive;
+
+    /* -webkit-text-stroke: 1px white; */
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+
+    background-image: url(./images/kiK5KBRij.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgb(251, 242, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-text{
+    font-family: 'Barriecito', cursive;
+    font-size: 100px;
+    text-align: center;
+    color:  rgb(75, 35, 113);
+}
+
+/* color: rgba(255, 250, 239, 0.9); */
+
+.design-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: black;
+}
+.slash{
+    width: 2px;
+    background-color: white;
+    height: 20px;
+    margin: 0 4px 0 4px;
+    align-self: center;
+}
+.boosteroid{
+    font-size: 18px;
+    color: white;
+    margin-left: 6px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.blog-1,
+.blog-2,
+.blog-3,
+.blog-4,
+.blog-5{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.blog-1{
+    color: rgb(128, 255, 0);
+}
+.blog-2{
+color: rgb(250, 133, 23);
+}
+.blog-3{
+color: rgb(0, 255, 255);
+}
+.blog-4{
+color: rgb(255, 255, 0);
+}
+.blog-5{
+color: white;
+}
+
+
+
+
+
+.hidden {
+    display: none;
+}
+.visible{
+    display: flex;
+}
+
+
+/* .slider-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+} */
+
+.question {
+    /* display: flex; */
+    flex-direction: column;
+    width: 800px;
+    /* height: 150px; */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* button {
+    margin-top: 10px;
+} */
+
+
