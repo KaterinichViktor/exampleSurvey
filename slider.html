@@ -10,7 +10,7 @@
     <form id="surveyForm" class="slider-container">
         <div class="slider-content">
             <div class="question">
-                <h3>Please tell us why you want to unsubscribe. Select one or more reasons below:</h3>
+                <h3>Please tell us why you want to unsubscribe.<br> Select one or more reasons below:</h3>
                 <label><input type="checkbox" class="q1Option" id="default1"> I just wanted to give it a try</label>
                 <label><input type="checkbox" class="q1Option" id="badQuality"> I am not satisfied with the service quality</label>
                 <label><input type="checkbox" class="q1Option" id="default2"> My favourite game is not on Boosteroid</label>
@@ -57,14 +57,16 @@
             </div>
             <div class="question" id="suggestions">
                 <h3>What changes / improvements would you like to see on Boosteroid? Leave your suggestions below:</h3>
-                <input type="text" id="suggestions" placeholder="Write here">
+                <textarea id="suggestions" placeholder="Write here"></textarea>
             </div>
-        </div>
-    </form>
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
 
-    <script src="test.js"></script>
-    <script src="slider.js"></script>
+            
+        </div>
+        <button id="finalSubmit" class="hidden">Submit</button>
+    </form>
+
+
+    <!-- <script src="test.js"></script> -->
+    <script src="v2.js"></script>
 </body>
 </html>

@@ -11,24 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const techProblemFreeInput = document.getElementById("techProblemFreeInput");
 
-    const sliderContent = document.querySelector('.slider-content');
-    const slideWidth = 600; // Width of each slide
-
-    let currentSlide = 0;
-
-    nextBtn.addEventListener('click', () => {
-        if (currentSlide < 4) { // 5 slides, 0-based index
-            currentSlide++;
-            updateSlider();
-        }
-    });
-
-    function updateSlider() {
-        const offsetX = -currentSlide * slideWidth;
-        sliderContent.style.transform = `translateX(${offsetX}px)`;
-    }
-
-  
     function isAnyChecked(nodeList) {
         return Array.from(nodeList).some(checkbox => checkbox.checked);
     }
@@ -115,15 +97,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     nextButton2.addEventListener("click", function () {
-
+        if (currentSlide < 4) { // 5 slides, 0-based index
+            currentSlide++;
+            updateSlider();
+        }
     });
 
     nextButton3.addEventListener("click", function () {
-
+        if (currentSlide < 4) { // 5 slides, 0-based index
+            currentSlide++;
+            updateSlider();
+        }
     });
 
     nextButton4.addEventListener("click", function () {
-
+        if (currentSlide < 4) { // 5 slides, 0-based index
+            currentSlide++;
+            updateSlider();
+        }
         document.getElementById("finalSubmit").classList.remove("hidden");
     });
 

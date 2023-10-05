@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="checkbox.css">
+</head>
+<body>
+    <form id="surveyForm" class="slider-container">
+        <div class="slider-content">
+            <div class="question">
+                <img src="./images/feedback-img.svg" alt="sad">
+                <p>Please tell us why you want to unsubscribe. <br> Select one or more reasons below:</p>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q1Option" id="default1">
+                    <span class="checkbox-text">I just wanted to give it a try</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q1Option" id="badQuality">
+                    <span class="checkbox-text">I am not satisfied with the service quality</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q1Option" id="default2">
+                    <span class="checkbox-text">My favourite game is not on Boosteroid</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q1Option" id="default3">
+                    <span class="checkbox-text">I have finished all the games I wanted to play</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q1Option" id="stayHidden">
+                    <span class="checkbox-text">I don’t want subscription payment to be charged automatically</span>
+                </label>
+    
+                <button type="button" id="nextButton1" class="nxtBtn hidden">Next</button>
+            </div>
+            <div class="question hidden" id="quality">
+                <img src="./images/feedback-img.svg" alt="sad">
+                <p>What kind of issues have you experienced? <br> Select one or more options below:</p>
+                <div class="scroll-container">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">Problems with mouse / keyboard / controller</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">Problems with sound / microphone</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">Problems with game saves</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">High ping / latency</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">Stream quality / low FPS / frame drops</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q2Option" >
+                        <span class="checkbox-text">In-game bugs</span>
+                    </label>
+                    <label>
+                        <input type="text" id="techProblemFreeInput" placeholder="Other">
+                    </label>
+                </div>
+                
+    
+                <button type="button" id="nextButton2" class="nxtBtn hidden">Next</button>
+            </div>
+            <div class="question" id="version">
+                <img src="./images/feedback-img.svg" alt="sad">
+                <p>Which Boosteroid version did you use the most often? <br> Select one or more options below:</p>
+                <div class="scroll-container">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Browser (Windows)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Browser (macOS)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Browser (Linux)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Browser (Android phone / tablet)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Browser (iPhone / iPad)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Desktop app (Windows)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Desktop app (macOS)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Desktop app (Linux)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Mobile app (Android)</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Android TV app / webOS app</span> 
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="q3Option">
+                        <span class="checkbox-text">Chromebook app</span> 
+                    </label>
+                </div>
+                
+    
+                <button type="button" id="nextButton3" class="nxtBtn hidden">Next</button>
+            </div>
+            <div class="question" id="connection">
+                <img src="./images/feedback-img.svg" alt="sad">
+                <p>What is your internet connection type? <br> Select one or more options below:</p>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q4Option">
+                    <span class="checkbox-text">Cable / Ethernet</span> 
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q4Option">
+                    <span class="checkbox-text">Wi-Fi</span> 
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="q4Option">
+                    <span class="checkbox-text">Mobile internet</span> 
+                </label>
+    
+                <button type="button" id="nextButton4" class="nxtBtn hidden">Next</button>
+            </div>
+            <div class="question" id="suggestions">
+                <img src="./images/feedback-img.svg" alt="sad">
+                <p>What changes / improvements would you like to see on Boosteroid?<br> Leave your suggestions below:</p>
+                <textarea id="suggestion" placeholder="Write here"></textarea>
+            </div>
+
+            
+        </div>
+        <button id="finalSubmit" class="hidden">Submit</button>
+    </form>
+
+
+    <!-- <script src="test.js"></script> -->
+    <script src="v2.js"></script>
+</body>
+</html>

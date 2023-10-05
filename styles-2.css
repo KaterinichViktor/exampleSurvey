@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 body {
     margin: 0;
@@ -31,7 +32,7 @@ body {
     max-width: 600px;
     height: 400px;
 
-    font-size: 14px;
+    
     background-color: #f0f0f0;
     border: 1px solid #ccc;
 
@@ -40,10 +41,21 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+
+    padding: 50px;
+    font-size: 17px;
 }
 
 .hidden{
     display: none;
 }
+
+#finalSubmit{
+    position: absolute;
+    left: 270px;
+    bottom: 35px;
+}
+
+
 
