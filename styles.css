@@ -118,8 +118,8 @@ p{
 }
 
 .scroll-container{
-    width: 510px;
-    height: 250px;
+    width: 512px;
+    height: 240px;
     overflow-y: scroll;
     scrollbar-width: thin; /* Firefox */
     scrollbar-color: rgb(31, 31, 31) transparent; /* Firefox */
@@ -151,7 +151,7 @@ p{
     align-items: center;
     text-align: start;
     height: 50px;
-    width: 500px;
+    width: 100%;
     background-color: rgb(31, 31, 31);
     border: 2px solid rgb(31, 31, 31);
     border-radius: 4px;
